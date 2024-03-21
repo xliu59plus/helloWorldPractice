@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - run: pwd
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
